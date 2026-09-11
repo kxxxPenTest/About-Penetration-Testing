@@ -4,7 +4,7 @@ This repository is a collection of notes and learning materials focused on the f
 
 The main purpose of this repository is to build a strong understanding of penetration testing methodologies, techniques, tools, and security concepts before applying them in practical environments.
 
-- Topics Covered
+## Topics Covered
 - Penetration Testing Fundamentals
 - Information Gathering
 - Enumeration
