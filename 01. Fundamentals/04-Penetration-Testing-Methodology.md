@@ -119,3 +119,59 @@ Information may include:
 
 #### Reconnaissance can be divided into:
 Passive Reconnaissance + Active Reconnaissance
+
+## 7. Passive Reconnaissance
+Passive reconnaissance collects information without directly interacting with the target infrastructure in a significant way.\
+\
+Examples include:
+- Search engines
+- Public websites
+- WHOIS information
+- Public DNS information
+- Certificate transparency records
+- Public documentation
+- Public code repositories
+- Social media
+
+The objective is to learn about the target  while minimizing direct interaction.
+
+## 8. Active Reconnaissance
+Active reconnaissance involves interacting directly with the target.\
+Examples include:
+- Port scanning
+- Service detection
+- HTTP requests
+- DNS queries
+- Directory enumerations
+- Network discovery
+
+For example:\
+```nmap -sC -sV <target>```
+\
+Active reconnaissance can generate logs or alerts on the target system, so it should only be performed when authorized.
+
+## 9. Phase 3 -- Scanning
+Scanning is used to identify reachable systems, open ports, services, and other technical information.\
+A common starting point is port scanning.\
+For example:\
+```nmap <target>```
+\
+\
+Service Detection:\
+```nmap -sV <target>```
+\
+\
+Default scripts:\
+```nmap -sC <target>```
+\
+\
+Combined:\
+```nmap -sC -sV <target>```
+\
+\
+All TCP ports:\
+```nmap -p- <target>```
+\
+\
+The purpose is not simply to run Nmap.\
+The tester needs to understand what the results mean.
